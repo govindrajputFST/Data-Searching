@@ -268,24 +268,6 @@ const movies = [
   }
 ];
 
-// app.get("/books/:name", (req, res) => {
-//     console.log("this is a path params")
-//     // return res.send("this other endpoint")
-//     const pathh=req.params.name;
-
-//     if (pathh === undefined) {
-//         return res.send(books);
-//      } 
- 
-//     //  const result=books.filter(book=>book.name.includes(query));
-//     //  if(result.length === 0) {
-//     //      return res.send("please provide correct query");
-//     //  }
-//     //  return res.send(result);
-// })
-
-
-// Book search endpoint
 app.get('/:bookmovie', function(req, res) {
     const bookmovie=req.params.bookmovie;
     const name = req.query.name;
@@ -310,10 +292,7 @@ app.get('/:bookmovie', function(req, res) {
     }
     return res.send("Not Found")
 
-    // const book=req.params;
-    // const results = searchBooks(query);
-    // res.send(results);
-    // return res.send(books);
+   
 });
 
 
